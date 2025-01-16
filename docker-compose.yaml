@@ -1,0 +1,9 @@
+---
+services:
+  nginx:
+    build: .
+    image: k8s-nginx/nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/usr/share/nginx/html
