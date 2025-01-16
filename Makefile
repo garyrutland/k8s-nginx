@@ -12,7 +12,7 @@ dkr_down:
 # k8s
 
 k8s_apply: dkr_build
-	kubectl apply -f ./infrastructure/k8s --force
+	kubectl apply -f ./infrastructure/k8s
 
 k8s_delete:
 	kubectl delete -f ./infrastructure/k8s
